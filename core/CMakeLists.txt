@@ -1,0 +1,13 @@
+set(
+    LIB_SRC_FILES
+    ./lib/Note/Notes.cxx
+)
+add_library(
+    rythm-parser
+    ${LIB_SRC_FILES}
+)
+target_include_directories(
+    rythm-parser
+    PUBLIC
+    ./lib
+)

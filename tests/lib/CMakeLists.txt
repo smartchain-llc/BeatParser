@@ -1,0 +1,12 @@
+add_executable(
+    NotesTest
+    ./Note/NotesTest.cxx
+)
+target_link_libraries(
+    NotesTest
+    rythm-parser
+)
+target_link_libraries(
+    NotesTest
+    GTest::gtest_main
+)
